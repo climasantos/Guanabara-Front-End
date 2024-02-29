@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolução do exercício 09</title>
+</head>
+
+<body>
+    <h1>Visualizador de Nacionalidade</h1>
+    Pais em que habita: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="conferir()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function conferir() {
+            var pais = window.document.querySelector('#pais')
+            var nac = String(pais.value)
+            res.innerHTML = `<p> Você faz parte do país <strong>${nac}</strong></p>`
+            if (nac == "brasil") {
+                res.innerHTML += `<p><strong>Você é Brasileiro ! </strong></p>`
+            } else {
+                (nac != "brasil")
+                res.innerHTML += `<p><strong>Você é Estrangeiro ! </strong></p>`
+            }
+
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>
